@@ -1,0 +1,168 @@
+.comment_view {
+  padding: 20px 60px;
+  width: 579px;
+}
+.comment_view .comment_box textarea {
+  outline: none;
+  resize: none;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.comment_view .comment_box .text_box {
+  color: black;
+}
+.comment_view .comment_box .text_box #comment_text {
+  border: 1px solid red;
+  border-radius: 10px;
+}
+.comment_view .comment_box .text_info {
+  font-size: 13px;
+  padding-top: 5px;
+}
+.comment_view .comment_box .text_info .textarea_btn {
+  text-align: center;
+  width: 72px;
+  line-height: 28px;
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  border-radius: 12px;
+  float: right;
+  margin-right: 8px;
+}
+.comment_view .comment_box .text_info .textarea_btn:hover {
+  color: blue;
+  cursor: pointer;
+}
+.comment_view .comment_box .text_info .textarea_btn:active {
+  background-color: #B5B5B6;
+}
+.comment_view .comment_box h5 {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 28px 0 5px;
+  color: #999 ;
+  border-bottom: 2px solid gainsboro;
+}
+.comment_view .comment_box h5 .comment_num {
+  margin-left: 10px;
+  color: #000000;
+}
+.comment_view .comment_box .comment_show {
+  width: 580px;
+  height: auto;
+  overflow: hidden;
+}
+.comment_view .comment_box .comment_show .comment_self {
+  float: left;
+  width: 580px;
+  padding: 18px 0 15px;
+  border-bottom: 1px solid gainsboro;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_img {
+  width: 60px;
+  height: 60px;
+  background-color: lightpink;
+  float: left;
+  margin-right: 10px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body {
+  color: #999;
+  margin-left: 10px;
+  float: left;
+  font-size: 13px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .com_username {
+  color: #1099f5;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_main {
+  width: 480px;
+  color: #000000;
+  font-size: 14px;
+  margin: 7px 0 12px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer {
+  width: 500px;
+  margin-top: 5px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply {
+  float: right;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply em {
+  font-style: normal;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply .reply_btn {
+  margin-left: 10px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply .reply_btn:hover {
+  cursor: pointer;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply .praise:hover {
+  cursor: pointer;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply .reply_num {
+  margin-right: 15px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .praise_reply .praised {
+  color: red;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .reply_drop {
+  width: 20px;
+  height: 20px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .reply_drop i {
+  font-size: 13px;
+}
+.comment_view .comment_box .comment_show .comment_self .comment_body .comment_footer .reply_drop:hover {
+  cursor: pointer;
+}
+.comment_view .comment_box .comment_show .comment_self .reply_view {
+  float: left;
+  width: 480px;
+  padding: 10px 15px;
+  border-bottom: 1px solid gainsboro;
+  font-size: 12px;
+  background-color: ghostwhite;
+  margin-left: 80px;
+}
+.comment_view .comment_box .comment_show .comment_self .reply_view .com_username {
+  color: #1099f5;
+}
+.comment_view .comment_box .comment_show .comment_self .reply_view .reply_main {
+  width: 480px;
+  color: #000000;
+  font-size: 14px;
+  margin: 7px 0 12px;
+}
+.comment_view .comment_box .comment_show .comment_self .reply_view .reply_footer {
+  width: 500px;
+  margin-top: 5px;
+}
+.comment_view .comment_box .comment_show .comment_self .report_box {
+  font-size: 13px;
+  width: 500px;
+  margin-left: 80px;
+  background-color: gainsboro;
+  float: left;
+}
+.comment_view .comment_box .comment_show .comment_self .report_box .report_text {
+  margin: 10px 20px 2px;
+}
+.comment_view .comment_box .comment_show .comment_self .report_box .report_text textarea {
+  width: 458px;
+}
+.comment_view .comment_box .comment_show .comment_self .report_box span {
+  float: left;
+  color: red;
+  margin-left: 20px;
+  display: none;
+}
+.comment_view .comment_box .comment_show .comment_self .report_box .report_btn_box {
+  float: right;
+  line-height: 20px;
+  color: white;
+  margin: 0 18px 8px;
+  background-color: #f3473a;
+  width: 50px;
+  height: 21px;
+  text-align: center;
+}

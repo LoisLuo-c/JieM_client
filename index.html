@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public/reset.csss" />
+		<link rel="stylesheet" type="text/css" href="css/public/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/channle/last_report.css" />
+		<link rel="stylesheet" type="text/css" href="css/article/article_view.css" />
+		<link rel="stylesheet" href="css/content_photos.css" />
+		<link rel="stylesheet" type="text/css" href="css/header/logged_drop.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+
+	</head>
+
+	<body>
+		<div class="website">
+
+			<div class="header"></div>
+			<div class="middle_con">
+
+				<!--内容区-->
+				<div class="wrapper_content">
+
+				</div>
+				<div class="logged_box">
+					<ul class="logged_list">
+						<li class="user_msg">
+							<a>消息</a>
+						</li>
+						<li class="user_setup">
+							<a target="_blank" href="http://loisluo.com/jiemian/users.html#/user_history">
+							帐号设置</a>
+						</li>
+						<li class="logout logoutBtn">
+							<a>退出登录</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="footer">
+
+		</div>
+		<div class="loading">
+			<div class="loadingImg">
+				<img src="img/tool/loading1.gif"/>
+			</div>
+			<div class="mask"></div>
+			
+		</div>
+		<!--登录-->
+		<div class="login_box">
+
+		</div>
+		<div class="footer">
+			
+		</div>
+		
+		<script src="js/public/search.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/video/videolist.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/video/video.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/article/news_list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/index.js" type="text/javascript" charset="utf-8"></script>
+		
+		<script src="js/channel/Channelphotos.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/homePhotos.js" type="text/javascript" charset="utf-8"></script>-->
+
+		<script src="js/public/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/comment.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/photos.js" type="text/javascript" charset="utf-8"></script>-->
+
+		<script type="text/javascript">
+			$(".header").load("header.html");
+//			$(".wrapper_content").load("homePage.html");
+
+			//显示登录框
+			$(document).on("click", ".log_box", function() {
+
+				$(".login_box").load("login.html");
+				login.showLoginModal();
+			})
+			
+			//退出登录
+			login.doLogout();
+			
+			//点击导航栏加载相应channel的内容
+			index.saveChannel();
+			//点击新闻卡片
+			index.toArticle();
+			//点击视频卡片
+			index.toVideo();
+			index.toIsEmg();
+
+			//			window.clearInterval(timer_home);
+			/***点击导航栏切换***/
+			Router.route('/', function() {
+				$(".loading").show();
+				$(".wrapper_content").load("homePage.html");
+//				if(window.channel_timer!=undefined){
+//					clearInterval(channel_timer);
+//				}
+			})
+			Router.route('/channel2', function() {
+				$(".loading").show();
+				ChannelPhotos.config.num=0
+				$(".wrapper_content").load("channelPage.html");
+//				if(window.channel_timer!=undefined){
+//					clearInterval(channel_timer);
+//				}
+
+			})
+			Router.route('/channel3', function() {
+				$(".loading").show();
+				ChannelPhotos.config.num=0
+				$(".wrapper_content").load("channelPage.html");
+//				if(window.channel_timer!=undefined){
+//					clearInterval(channel_timer);
+//				}
+			})
+			Router.route('/channel4', function() {
+				$(".loading").show();
+				ChannelPhotos.config.num=0
+				$(".wrapper_content").load("channelPage.html");
+//				if(window.channel_timer!=undefined){
+//					clearInterval(channel_timer);
+//				}
+			})
+			Router.route('/search', function() {
+				$(".wrapper_content").load("search.html");
+//				if(window.channel_timer!=undefined){
+//					clearInterval(channel_timer);
+//				}
+			})
+		</script>
+
+	</body>
+
+</html>

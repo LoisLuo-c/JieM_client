@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public/reset.css" />
+		<link rel="stylesheet" href="css/header/header.css" />
+		<link rel="stylesheet" type="text/css" href="css/article/article_view.css" />
+		<link rel="stylesheet" href="css/public/comment.css" />
+		<link rel="stylesheet" type="text/css" href="css/article/recommend_article.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+
+	</head>
+
+	<body>
+		<!--页面导航-->
+		<div class="header"></div>
+		<div class="loading">
+			<div class="loadingImg">
+				<img src="img/tool/loading1.gif" />
+			</div>
+			<div class="mask"></div>
+
+		</div>
+		<!--文章列表-->
+		<div class="article_view">
+			<div class="article_container">
+				<div class="artical_container_con">
+
+				</div>
+
+				<div class="artical_recommend">
+					<div class="title">
+						<span>推荐阅读</span>
+					</div>
+					<ul class="recommend_list">
+
+					</ul>
+				</div>
+				<!--评论区-->
+				<div class="comment_view">
+					<div class="comment_box">
+						<div class="text_box">
+							<textarea id="comment_text" maxlength="200" name="comment" rows="3" cols="69" placeholder="发表评论">
+								
+							</textarea>
+						</div>
+						<div class="text_info">
+							<span>最少输入5个字</span>
+							<div class="textarea_btn">发布</div>
+						</div>
+						<h5><span>评论</span><span class="comment_num"></span></h5>
+						<dl>
+							<dd>
+								<dd class="comment_show">
+
+								</dd>
+							</dd>
+						</dl>
+						<div class="load">
+							<div class="loadmore">
+								<span>加载更多</span>
+							</div>
+							<div class="nomore">
+								<span>没有更多了</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="login_box"></div>
+
+		<div class="footer">
+
+		</div>
+
+		<script src="js/article/news_list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/comment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/article/recommend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/article/article.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".header").load("header2.html");
+			article.showMore();
+			//评论框输入长度控制
+			article.controlCommentLen();
+			//			newList.show_newslist(sessionStorage.getItem("article_id"));
+
+			//判断是快讯还是新闻
+			if(sessionStorage.getItem("newsOrNot") == "true") {
+				newList.show_newslist(sessionStorage.getItem("article_id"));
+			} else {
+				newList.showIsemg(sessionStorage.getItem("isemg_id"));
+				$(".comment_view").hide();
+				$(".artical_recommend").hide();
+			}
+
+			//初始化评论
+			var atricleCurrentPage = 1
+			comment.getComment(atricleCurrentPage);
+
+			//设置textarea自动增高
+			$("textarea").txtaAutoHeight();
+
+			//点击新闻卡片跳转
+			$(document).on("click", ".news_item", function() {
+				sessionStorage.setItem("article_id", this.dataset.news_item);
+				var id = sessionStorage.getItem("article_id")
+				newList.show_newslist(id);
+			})
+
+			//判断是否已登录
+			$("#comment_text").on("click", function() {
+				comment.isLogin();
+			})
+
+			/****回复设置****/
+			//回复框显示设置
+			var i = true;
+			article.showReportBox();
+			//点击回复按钮
+			article.clickReplyBtn();
+
+			//			显示或关闭回复内容
+			var reply_i = true;
+			$(document).on("click", ".reply_drop", function() {
+				//拼接要招到的comment的classname
+				var comment_id = this.dataset.reply_drop;
+				var str = "comment" + comment_id;
+				var comment_box = document.getElementsByClassName(str);
+
+				var reply_view = $(comment_box).children(".reply_view");
+				if(reply_i) {
+					$(reply_view).hide();
+					reply_i = false;
+				} else {
+					$(reply_view).show();
+					//把所要加载的comment的id传给回复
+					comment.updateReply(comment_id);
+					reply_i = true;
+				}
+
+			})
+
+			/****回复结束****/
+		</script>
+	</body>
+
+</html>

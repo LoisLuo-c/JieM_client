@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+		<style type="text/css">
+			#aaa{
+				width: 100px;
+				height: 1000px;
+				background-color: red;
+			}
+		</style>
+	</head>
+
+	<body>
+		<button>输出每个列表项的值</button>
+		<ul>
+			<li>Coffee</li>
+			<li>Milk</li>
+			<li>Soda</li>
+		</ul>
+		<div id="aaa" >
+			
+		</div>
+		<div>
+			<input type="checkbox" name="ni" />你
+			<input type="checkbox" name="ni" />我
+			<input type="checkbox" name="ni" />他
+			<input type="checkbox" name="ni" />呵呵
+
+		</div>
+		<input type="button" value="敲吧敲吧" />
+		<script type="text/javascript">
+			$(window).scroll(function() {
+  
+			    if ($(document).scrollTop()<=0){
+			      alert("滚动条已经到达顶部为0");
+			    }
+			  
+			    if ($(document).scrollTop() >= $(document).height() - $(window).height()) {
+			      console.log("滚动条已经到达底部为");
+			    }
+			  });
+		</script>
+	</body>
+
+</html>

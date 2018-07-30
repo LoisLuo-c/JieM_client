@@ -1,0 +1,142 @@
+.main_content .middle_content {
+  width: 1200px;
+  margin: 0 auto;
+}
+.main_content .middle_content .content_inner {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #9e1d0a;
+}
+.main_content .middle_content .content_inner .content_left {
+  width: 120px;
+  float: left;
+  color: white;
+  font-family: Verdana light, SimHei;
+}
+.main_content .middle_content .content_inner .content_left h2 {
+  text-align: center;
+  font-size: 70px;
+  word-wrap: break-word;
+  text-shadow: 0 0 5px #333;
+  padding: 15px;
+  margin: 0;
+  line-height: 70px;
+}
+.main_content .middle_content .content_inner .content_left .sort_list {
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 225, 0.14);
+}
+.main_content .middle_content .content_inner .content_left .sort_list .sort_item {
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 225, 0.14);
+}
+.main_content .middle_content .content_inner .content_left .sort_list .sort_item:hover {
+  background-color: #811803;
+  transition: 0.2s;
+}
+.main_content .middle_content .content_inner .photos_main {
+  width: 1079px;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list {
+  width: 6000%;
+  height: 350px;
+  position: relative;
+  left: -510px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item {
+  width: 700px;
+  height: 350px;
+  float: left;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .photos a {
+  width: 700px;
+  height: 350px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .photos a img {
+  width: 700px;
+  height: 350px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box {
+  position: absolute;
+  bottom: 20px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info {
+  display: none;
+  position: relative;
+  left: -330px;
+  width: 330px;
+  color: white;
+  margin-left: 15px;
+  padding: 1px ;
+  background-color: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 5px #000;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .titie {
+  margin: 15px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .titie h3 {
+  margin: 0;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer {
+  width: 300px;
+  margin: 0 15px 15px;
+  font-size: 12px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer .author {
+  margin-right: 5px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer .comment {
+  float: right;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer .comment i {
+  margin-right: 4px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer .click {
+  float: right;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .photos_item .info_box .photos_info .footer .click i {
+  margin-right: 4px;
+}
+@keyframes mymove {
+  from {
+    left: -330px;
+  }
+  to {
+    left: 0;
+  }
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .photos_list .active .photos_info {
+  display: inline-block !important;
+  animation: mymove 2s infinite;
+  animation: mymove 1s;
+  left: 0px !important;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .btn {
+  width: 190px;
+  height: 350px;
+  background-color: rgba(82, 82, 82, 0.7);
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .btn i {
+  font-size: 50px;
+  line-height: 320px;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .btn_left:hover {
+  background-color: rgba(42, 42, 42, 0.7);
+  color: white;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .btn_right {
+  right: 0;
+}
+.main_content .middle_content .content_inner .photos_main .ph_box .btn_right:hover {
+  background-color: rgba(42, 42, 42, 0.7);
+  color: white;
+}

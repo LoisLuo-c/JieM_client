@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/search/search.css"/>
+	</head>
+	<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<div class="search_content">
+			<div class="search_input">
+				<input type="text"/>
+				<button class="search_botton" type="button">搜索</button>
+				
+			</div>
+			<div class="search_news">
+				<ul class="search_list">
+					
+				</ul>
+			</div>
+			<div class="search_load">
+				<div class="loadmore">
+					<span>加载更多</span>
+				</div>
+				<div class="nomore">
+					<span>没有更多了</span>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/public/search.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var current_page=1;
+		search.getList(current_page);
+		$(".search_input .search_botton").on("click",function(){
+			window.location.reload()
+			var val=$(".search_input input").val();
+			sessionStorage.setItem("search_keyword",val);
+			search.getList(current_page);
+		})
+		$(".search_load .loadmore").on("click",function(){
+			current_page++;
+			search.getList(current_page);
+		})
+	</script>
+</html>

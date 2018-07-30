@@ -1,0 +1,187 @@
+
+//      评论区
+        .comment_view{
+            padding: 20px 60px;
+            width: 579px;
+            .comment_box{
+                textarea{
+                        outline: none;
+                        resize: none;
+                        overflow-x: hidden;overflow-y: hidden;   
+                }
+                .text_box{
+                      color: black;
+                    
+                    #comment_text{
+                         border: 1px solid red; 
+                         border-radius: 10px;                  
+                    }                    
+                }
+                .text_info{
+                    font-size: 13px;
+                    padding-top: 5px;
+                        .textarea_btn{
+                            text-align: center;
+                            width: 72px;
+                            line-height: 28px;
+                            border: 1px solid #ddd;
+                            background-color: #ddd;
+                            border-radius: 12px;
+                            float: right;
+                            margin-right: 8px;
+                        }
+                        .textarea_btn:hover{
+                            color: blue;
+                            cursor: pointer;
+                        }
+                        .textarea_btn:active{
+                            background-color: #B5B5B6;
+                        }
+                }
+                h5{
+                    font-size: 15px;
+                    line-height: 30px;
+                    margin: 28px 0 5px;
+                    color:#999 ;
+                    border-bottom: 2px solid gainsboro;
+                    .comment_num{
+                        margin-left: 10px;
+                        color: #000000;
+                    }
+                }
+                
+                //评论内容开始
+                .comment_show{
+                    width: 580px;height: auto;
+                    overflow: hidden;
+                    .comment_self{
+                        float: left;
+                        width: 580px;
+                        padding: 18px 0 15px;
+                        border-bottom: 1px solid gainsboro;
+                        .comment_img{
+                            width: 60px;height: 60px;
+                            background-color: lightpink;
+                            float: left;
+                            margin-right:10px;
+                        }
+                        .comment_body{
+                            color: #999;
+                            margin-left: 10px;
+                            float: left;
+                            font-size: 13px;
+                            .com_username{
+                                color: #1099f5;
+                            }
+                            .comment_main{
+                                width: 480px;
+                                color: #000000;
+                                font-size: 14px;
+                                margin: 7px 0 12px;
+                            }
+                            .comment_footer{
+                                width: 500px;
+                                margin-top: 5px;
+                                .praise_reply{
+                                    float: right;
+                                    em{
+                                        font-style: normal;
+                                    }
+                                    .reply_btn{
+                                        margin-left: 10px;
+                                    }
+                                    .reply_btn:hover{
+                                        cursor: pointer;
+                                    }
+                                    .praise:hover{
+                                        cursor: pointer;
+                                    }
+                                    .reply_num{
+                                        margin-right: 15px;
+                                    }
+                                    .praised {
+                                        color: red;
+                                    }
+                                   
+                                }
+                                .reply_drop{
+                                    width: 20px;height: 20px;
+                                    i{
+                                       font-size: 13px;
+                                   }
+                                }
+                                .reply_drop:hover{
+                                    cursor: pointer;
+                                }
+                                 
+                            }
+                           
+                        }
+                     //评论区内容结束  
+                     
+                     //回复内容开始
+                        .reply_view{
+                        float: left;
+                        width: 480px;
+                        padding: 10px 15px;
+                        border-bottom: 1px solid gainsboro;
+                        font-size: 12px;
+                        background-color: ghostwhite;
+                        margin-left: 80px;
+                            .com_username{
+                                color: #1099f5;
+                            }
+                            .reply_main{                                
+                                width: 480px;
+                                color: #000000;
+                                font-size: 14px;
+                                margin: 7px 0 12px;
+                                p{
+                                    
+                                }
+                            }
+                            .reply_footer{
+                                width: 500px;
+                                margin-top: 5px;
+                            }
+                           
+                        }
+                        //回复内容结束
+                        
+                        
+                        //回复框
+                         .report_box{
+                                font-size: 13px;
+                                width: 500px;
+                                margin-left: 80px;
+                                background-color: gainsboro;
+                                float: left;
+                                .report_text{
+                                    margin: 10px 20px 2px;
+                                    textarea{
+                                        width: 458px;
+                                    }
+                                }
+                                span{
+                                    float: left;
+                                    color: red;
+                                    margin-left: 20px;
+                                    display: none;
+//                                  display: inherit;
+                                }
+                                .report_btn_box{                                    
+                                    float:right;                                    
+                                    line-height: 20px;
+                                    color: white;
+                                    margin:0 18px 8px;
+                                    background-color: rgb(243, 71, 58);
+                                    width:50px;height: 21px;
+                                    text-align: center;
+                                   
+                                }
+                            }
+                         //回复框结束
+                    }
+                }
+            }
+        }

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/public/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/register/register.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+
+		<script src="js/register/verf_register.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/register/register.js" type="text/javascript" charset="utf-8"></script>
+		
+		<title></title>
+	</head>
+
+	<body>
+		<div class="box1">
+			
+		
+		<div class="header">
+			<div class="header_text">
+				<span class="fc">欢迎注册界面新闻</span>
+				<a href="http://loisluo.com/jiemian/loginPage.html">
+				<span class="tologin">马上登陆</span>
+				</a>
+				<span class="sc">已有帐号?</span>
+			</div>
+		</div>
+		<div class="reg_box">
+			<form action="" method="post" id="register_box">
+
+				<ul class="reg_list">
+					<li class="reg_username">
+						<div class="input">
+							<input type="text" name="username" onfocus="textFocus(this)" onblur="textBlur(this)" value="请输入用户名" />
+							<div class="icon"><i class="iconfont icon-fl-renyuan"></i></div>
+						</div>
+						<div class="msg">
+							<span class="prompt">请输入3-12个字符(中文，英文，数字)</span>
+							<span class="error">请输入3-12个字符(中文，英文，数字)</span>
+							<span class="empty">用户名不能为空</span>
+							<span class="correct"><i class="iconfont icon-zhengque"></i></span>
+						</div>
+
+					</li>
+					<li class="reg_password">
+						<div class="input">
+							<input type="password" name="password" onfocus="textFocus(this)" onblur="textBlur(this)" value="请输入密码" />
+							<div class="icon"><i class="iconfont icon-password"></i></div>
+						</div>
+						<div class="msg">
+							<span class="prompt">请输入6-16个字符组合(支持英文，数字，符号组合)</span>
+							<span class="error">格式错误！请输入6-16个字符组合(支持英文，数字，符号组合)</span>
+							<span class="empty">密码不能为空</span>
+							<span class="correct"><i class="iconfont icon-zhengque"></i></span>
+						</div>
+					</li>
+					<li class="comfirm_pw">
+						<div class="input">
+							<input type="password" name="" onfocus="textFocus(this)" onblur="textBlur(this)" value="确认密码" />
+							<div class="icon"><i class="iconfont icon-password"></i></div>
+						</div>
+						<div class="msg">
+							<span class="prompt">请再次输入密码</span>
+							<span class="empty">确认密码不能为空</span>
+							<span class="error">两次输入的密码不一致</span>
+							<span class="correct"><i class="iconfont icon-zhengque"></i></span>
+						</div>
+					</li>
+					<li class="verf_code">
+						<div class="input">
+							
+								<input onfocus="textFocus(this)" onblur="textBlur(this)" value="请输入验证码" type="text" class="topAlign" id="verify" required>
+								<canvas width="170" height="40" id="verifyCanvas"></canvas>
+								<img id="code_img">
+						
+						</div>
+						<div class="msg">
+							<span class="empty">验证码不能为空</span>
+							<span class="prompt">请输入验证码</span>
+							<span class="error">验证码输入错误</span>
+							<span class="correct"><i class="iconfont icon-zhengque"></i></span>
+						</div>
+					</li>
+					<li class="submit">
+						<div class="submit_box">
+							<span>注册</span>
+						</div>
+					</li>
+					
+				</ul>
+			</form>
+
+		</div>
+		</div>
+		<div class="success">
+			<div>
+				<span class="fc">注册成功<i class="iconfont icon-zhengque"></i></span>
+				<a target="_blank" href="http://loisluo.com/jiemian/loginPage.html">
+					<span class="sc">马上登陆</span>
+				</a>
+				
+			</div>
+		</div>
+		<script src="js/register/verification_code.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			verfRegister();
+			$(document).on("click",".submit_box",function(){
+				register.doregister();
+			
+			})
+			
+		</script>
+
+	</body>
+
+</html>

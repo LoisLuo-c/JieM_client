@@ -1,0 +1,35 @@
+.artical_recommend {
+  width: 260px;
+  float: right;
+  top: 0;
+}
+.artical_recommend .title {
+  width: 260px;
+  height: 30px;
+  line-height: 30px;
+  margin: 40px 0 20px;
+  text-align: center;
+  font-size: 16px;
+  background-color: gainsboro;
+}
+.artical_recommend .recommend_list .news_item {
+  margin: 10px 0 20px;
+}
+.artical_recommend .recommend_list .news_item .news_img img {
+  width: 260px;
+  height: 130px;
+}
+.artical_recommend .recommend_list .news_item .news_title h3 {
+  margin: 10px;
+  font-size: 18px;
+}
+.artical_recommend .recommend_list .news_item .news_title:hover {
+  color: #06145c;
+}
+.artical_recommend .recommend_list .news_item .news_footer {
+  font-size: 12px;
+}
+.artical_recommend .recommend_list .news_item .news_footer .news_date {
+  color: #777;
+  margin-left: 5px;
+}

@@ -1,0 +1,238 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+/*布局开始*/
+
+#login_dialog {
+	position: fixed;
+	left: 40%;
+	top: 40%;
+	background-color: #303a40;
+	width: 500px;
+	margin-left: -200px;
+	margin-top: -150px;
+	font-family: "黑体";
+	/*禁止复制粘贴*/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.register_dialog_title {
+	height: 35px;
+	line-height: 35px;
+	margin: 0 5px;
+}
+
+.register_dialog_info {
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+#register_dialog {
+	position: fixed;
+	left: 40%;
+	top: 40%;
+	background-color: #303a40;
+	width: 500px;
+	/* 	height: 600px; */
+	margin-left: -200px;
+	margin-top: -200px;
+	font-family: "黑体";
+	-moz-user-select: none;
+	/*火狐*/
+	-webkit-user-select: none;
+	/*webkit浏览器*/
+	-ms-user-select: none;
+	/*IE10*/
+	-khtml-user-select: none;
+	/*早期浏览器*/
+	user-select: none;
+}
+
+.register_dialog_info {
+	float: left;
+	margin-left: 10px;
+	color: #fff;
+	margin-top: 5px;
+	font-size: 20px;
+}
+
+.dialog_close {
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border-radius: 25px;
+	float: right;
+	line-height: 40px;
+	font-size: 20px;
+	color: #d8dadb;
+	font-family: "微软雅黑";
+	text-align: center;
+	cursor: center;
+}
+
+form {
+	padding: 20px 0px;
+}
+
+ul li {
+	list-style: none;
+}
+
+.sub {
+	text-align: center;
+}
+
+.sub input {
+	display: inline-block;
+	width: 300px;
+	background-color: rgb(255, 109, 11);
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	font-family: 黑体;
+	outline: none;
+	border: none;
+	margin: auto;
+}
+
+.dialog_close:hover {
+	background-color: #566
+}
+
+input[type="submit"]:hover {
+	cursor: pointer;
+}
+
+
+/*布局结束*/
+
+.reg-box {
+	padding-left: 30px;
+}
+
+.reg-box li {
+	line-height: 44px;
+	width: 500px;
+	overflow: hidden;
+}
+
+.reg-box li label {
+	width: 68px;
+	height: 50px;
+	float: left;
+	line-height: 50px;
+	text-align: right;
+	padding-right: 20px;
+}
+
+.reg-box li input,
+.reg-box li select {
+	padding: 6px 0;
+	font-size: 16px;
+	width: 296px;
+	height: 28px;
+	line-height: 28px;
+	border: 1px solid #dddddd;
+	text-indent: 0.5em;
+	float: left;
+}
+
+.reg-box li select option {
+	font-size: 16px;
+}
+
+.registered .btn a {
+	background: #ff7200;
+	margin-left: 110px;
+}
+
+
+/*验证码*/
+
+.add {
+	width: 128px;
+	height: 44px;
+	float: left;
+	_display: inline;
+	cursor: pointer;
+	margin-left: 20px;
+}
+
+.reg-box li .sradd {
+	width: 148px;
+	text-indent: 4px;
+	font-size: 14px;
+}
+
+.reg-box li .input-code {
+	width: 106px;
+	padding: 10px;
+	font-family: Arial;
+	font-style: italic;
+	color: red;
+	letter-spacing: 1px;
+	cursor: pointer;
+	text-align: center;
+	text-indent: 0;
+}
+
+.yzm,
+.phoKey {
+	background: #ff7200;
+	text-align: center;
+	line-height: 44px;
+	color: #fff;
+}
+
+.phoKey {
+	letter-spacing: 3px;
+	font-size: 18px;
+}
+
+.yzmc {
+	background: #dddddd;
+	text-align: center;
+	line-height: 44px;
+	color: #999;
+}
+
+.error {
+	clear: both;
+	display: block;
+	color: red;
+	padding-left: 90px;
+	padding-bottom: 5px;
+	height: 20px;
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+input {
+	background-color: #fff;
+	outline: none;
+}
+
+.reg-box li {
+	width: auto;
+}
+
+.reg-box li input.errorC,
+.errorC {
+	border: 1px solid red;
+}
+
+.reg-box li input.checkedN,
+.checkedN {
+	border: 1px solid #1ece6d;
+}

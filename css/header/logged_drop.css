@@ -1,0 +1,29 @@
+.logged_box {
+  display: none;
+  position: absolute;
+  top: -43px;
+  right: 0;
+}
+.logged_box .logged_list {
+  right: 0px;
+  z-index: 100px;
+  top: -10px;
+  width: 85px;
+  height: 90px;
+  background-color: white;
+  color: black;
+  border: 1px solid gainsboro;
+  box-shadow: 1px 1px 1px ghostwhite;
+}
+.logged_box .logged_list li {
+  width: 85px;
+  height: 30px;
+  text-align: center;
+}
+.logged_box .logged_list li a {
+  line-height: 30px;
+  font-size: 16px;
+}
+.logged_box .logged_list li:hover {
+  background-color: darkgoldenrod;
+}

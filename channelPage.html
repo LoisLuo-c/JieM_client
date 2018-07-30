@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/channle/last_report.css" />
+		<!--<link rel="stylesheet" type="text/css" href="css/article/article_view.css" />-->
+		<link rel="stylesheet" type="text/css" href="css/channle/channel_emergence.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+
+		<link rel="stylesheet" href="css/channle/content_photos.css" />
+	</head>
+
+	<body>
+		<div class="header_channel"></div>
+		<div class="main_content">
+			<div class="prev_con"></div>
+			<div class="middle_content">
+				<div class="content_inner">
+					<div class="content_left">
+
+					</div>
+					<!--轮播图-->
+					<div class="photos_main">
+						<div class="ph_box">
+
+							<ul class="photos_list">
+								
+							</ul>
+							<div class="btn_left btn"><i class="iconfont icon-jiantou1"></i></div>
+							<div class="btn_right btn"><i class="iconfont icon-jiantou3"></i></div>
+						</div>
+
+					</div>
+					<!--最新报道-->
+					<div id="latest_report">
+						<div id="LR_list">
+							<div class="LR_card_top">
+								<h5>最新报道</h5></div>
+							<div id="LR_list_sub"></div>
+							<div class="load">
+								<div class="loadmore">
+									<span>加载更多</span>
+								</div>
+								<div class="nomore">
+									<span>没有更多了</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="right_list">
+						<div class="isEmergence">
+							<span>快讯</span>
+						</div>
+						<div class="isemg_list">
+
+						</div>
+						<div class="recommend">
+							<span>推荐视频</span>
+						</div>
+
+					</div>
+					<div style="clear:both"></div>
+
+				</div>
+
+				<div class="prev_next"></div>
+			</div>
+		</div>
+		<script src="js/channel/Channelphotos.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/channel/latest_report.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/channel/channel_isEmergencies.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/article/recommend.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/channel/channel_content_left.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var nav = window.location.pathname;
+			//加载新闻列表
+			app.getList(1);
+			channelEmerg.getList();
+			channelLeft.createMsg();
+
+			ChannelPhotos.btnleft();
+			ChannelPhotos.btnright();
+			ChannelPhotos.getList();
+			ChannelPhotos.autoPlay();
+			//点击最新报道卡片
+			$(document).on('click', '.LR_item', function() {
+
+				//点击卡片项目的时候，把卡片的数据保存下来，在加载新闻的时候传过去
+				sessionStorage.setItem("article_id", this.dataset.new_list);
+				//文章要显示的是不是快讯的，
+				sessionStorage.setItem("newsOrNot", true);
+				
+
+				var id = sessionStorage.getItem("article_id")
+				newList.show_newslist(id);
+			})
+			//			
+			/***加载更多***/
+			var current_page = 2;
+			$(".loadmore").on("click", function() {
+				app.getList(current_page);
+				current_page++;
+			});
+		</script>
+	</body>
+
+</html>

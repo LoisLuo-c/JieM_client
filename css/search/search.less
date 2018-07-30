@@ -1,0 +1,93 @@
+body {
+    background-color: ghostwhite;
+}
+
+.search_content {
+    background-color: white;
+    margin-left: 100px;
+    width: 1000px;
+    border: 1px solid gainsboro;
+    overflow: hidden;
+    .search_input {
+        margin: 50px 50px;
+        font-size: 18px;
+        input {
+            margin-top: 1px;
+            float: left;
+            width: 612px;
+            height: 32px;
+            box-shadow: 1px 0 0 #767473;
+            background-color: ghostwhite;
+            padding: 3px 10px;
+        }
+        input:focus {
+            outline: none;
+            border: 1px solid #f12b15;
+        }
+        button {
+            border: 0px;
+            background-color: #f12b15;
+            color: white;
+            float: left;
+            width: 60px;
+            height: 42px;
+        }
+    }
+    .search_news {
+        width: 900px;
+        margin: 20px 50px;
+        float: left;
+        overflow: hidden;
+        border-top: 1px solid gainsboro;
+        .search_list {
+            float: left;
+            .news_item {
+                padding: 20px 0;
+                border-bottom: 1px solid gainsboro;
+                .news_title {
+                    h3 {
+                        font-size: 16px;
+                        margin: 1px;
+                    }
+                }
+                .news_text {
+                    color: #343130;
+                    font-size: 14px;
+                    margin: 10px 0;
+                }
+                .news_footer {
+                    color: #525252;
+                    font-size: 12px;
+                    span {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.search_load {
+    padding: 20px 0 50px;
+    float: left;
+    .loadmore {
+        width: 900px;
+        text-align: center;
+        span {
+            background-color: #f8f8f8;
+            border: 1px solid #a6a6a6;
+            border-radius: 10px;
+            padding: 5px 20px;
+            width: 100px;
+            text-align: center;
+        }
+    }
+    .nomore {
+        display: none;
+        width: 900px;
+        text-align: center;
+//      span {
+//          margin-left: 320px;
+//      }
+    }
+}

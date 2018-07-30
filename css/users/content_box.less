@@ -1,0 +1,104 @@
+.content_box {
+    float: left;
+    .msg_box {
+        border-left: 10px solid #f0ebea;
+        box-shadow: -2px 0 8px rgba(0, 0, 0, .35);
+        background-color: white;
+        width: 630px;
+        overflow: hidden;
+        display: none;
+        
+        .msg_list {
+            li {
+                width: 580px;
+                height: 100px;
+                margin: 0 15px 0 20px;
+                border-bottom: 1px solid gainsboro;
+                overflow: hidden;
+                
+                .msgCon {
+                    float: left;
+                    width: 540px;height: 100px;
+                    margin-left: 15px;
+                    .header {
+                        float: left;
+                        width: 100%;
+                        margin-top: 10px;
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: #434242;
+                        span {
+                            margin-right: 5px;
+                        }
+                    }
+                    .content {
+                        float: left;
+                        margin: 10px 0;
+                        font-size: 15px;
+                        color: gray;
+                        .user {
+                            float: left;
+                        }
+                        .reply_con {
+                            float: left;
+                            width: 420px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                    }
+                    .footer {
+                        float: left;
+                        font-size: 13px;
+                        color: gray;
+                        .time {
+                            float: left;
+                            margin-right: 15px;
+                        }
+                        .resource{
+                            float: left;
+                            width: 357px;
+                            margin: 0;
+                            padding: 0;
+                            text-overflow: ellipsis;
+                            white-space:nowrap;
+                            overflow: hidden;
+                        }
+                        .resource:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .item_parise {
+                .parise_msg{
+                    .header {
+                        margin: 20px 0;
+                    }
+                }
+                
+            }
+        }
+        .loadmore {
+            float: left;
+            width: 580px;
+            margin: 20px 0 50px;
+            text-align: center;
+            span {
+                background-color: #f8f8f8;
+                border: 1px solid #a6a6a6;
+                border-radius: 10px;
+                padding: 5px 20px;
+                width: 100px;
+                text-align: center;
+            }
+        }
+        .nomore {
+            display: none;
+            margin: 20px 0 50px;
+            span {
+                margin-left: 254px;
+            }
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.right_list {
+  float: right;
+}
+.right_list .isEmergence {
+  background-color: #ececec;
+  width: 358px;
+  height: 40px;
+}
+.right_list .isEmergence span {
+  color: #1c1c1c;
+  margin: 0 20px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.right_list .isemg_list {
+  width: 358px;
+  background-color: ghostwhite;
+}
+.right_list .isemg_list .isemg_item {
+  padding: 20px;
+  border-bottom: 1px solid gainsboro;
+}
+.right_list .isemg_list .isemg_item .msg_header {
+  color: #2d2b2b;
+}
+.right_list .isemg_list .isemg_item .msg_header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+.right_list .isemg_list .isemg_item .msg_footer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: #777;
+}
+.right_list .recommend {
+  background-color: #ececec;
+  width: 358px;
+  height: 40px;
+}
+.right_list .recommend span {
+  color: #1c1c1c;
+  margin: 0 20px;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+}

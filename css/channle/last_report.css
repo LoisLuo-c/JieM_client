@@ -1,0 +1,103 @@
+#latest_report {
+  width: 720px;
+  margin-left: 120px;
+  background-color: white;
+  float: left;
+  display: inline-block;
+}
+#latest_report #LR_list {
+  overflow: hidden;
+}
+#latest_report #LR_list .LR_card_top {
+  padding: 20px;
+}
+#latest_report #LR_list .LR_card_top h5 {
+  display: inline-block;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #9e1d0a;
+  color: white;
+  padding: 0 15px;
+  line-height: 30px;
+}
+#latest_report #LR_list #LR_list_sub {
+  padding-left: 20px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item {
+  float: left;
+  width: 328px;
+  height: 330px;
+  position: relative;
+  border: 1px solid gainsboro;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_img_box img {
+  width: 330px;
+  height: 186px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_tags {
+  font-size: 12px;
+  line-height: 19px;
+  margin-left: 10px;
+  color: #27757b;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_header {
+  padding: 0 10px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_header h2 {
+  font-weight: 400;
+  margin: 0;
+  font-size: 22px;
+  line-height: 28px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer {
+  font-size: 12px;
+  margin-left: 10px;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 8px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer p {
+  width: 310px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer .LR_author {
+  margin-right: 15px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer .click {
+  float: right;
+  margin-right: 6px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer .click i {
+  margin-right: 3px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer .comment {
+  float: right;
+  margin-right: 6px;
+}
+#latest_report #LR_list #LR_list_sub .LR_item .LR_news_con .LR_news_footer .comment i {
+  margin-right: 3px;
+}
+#latest_report #LR_list .load {
+  padding: 20px 0 50px;
+  float: left;
+}
+#latest_report #LR_list .load .loadmore {
+  width: 720px;
+  text-align: center;
+}
+#latest_report #LR_list .load .loadmore span {
+  background-color: #f8f8f8;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  padding: 5px 20px;
+  width: 100px;
+  text-align: center;
+}
+#latest_report #LR_list .load .nomore {
+  display: none;
+}
+#latest_report #LR_list .load .nomore span {
+  margin-left: 320px;
+}

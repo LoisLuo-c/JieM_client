@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/homePage/homePage.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage/homePhotos.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage/msgAndReport.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage/home_inner_news.css" />
+		<link rel="stylesheet" type="text/css" href="css/homePage/home_right_video.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body>
+		<div class="content">
+			<div class="content_inner">
+				<div class="content_container">
+					<div class="index_left">
+						<div class="top_silder">
+
+							<div class="photo_box">
+								<ul class="ph_list">
+								</ul>
+								<div class="btn btn_left"><i class="iconfont icon-jiantou1"></i></div>
+								<div class="btn btn_right"><i class="iconfont icon-jiantou3"></i></div>
+								<div class="position_box">
+
+								</div>
+							</div>
+
+						</div>
+						<div class="news_msg">
+							<div class="news_msg_title"><span>快讯</span></div>
+							<div class="news_m"></div>
+
+						</div>
+						<div class="news_reports">
+
+						</div>
+					</div>
+					<div class="index_inner">
+						<div class="channel_title">
+							<span>天下</span>
+						</div>
+						<div class="inner_news_list">
+
+						</div>
+					</div>
+					<div class="index_right">
+						<div class="videolist_title">
+							<span>推荐视频</span>
+							<div class="banner"></div>
+
+						</div>
+
+					</div>
+					<div class="load">
+						
+						<div class="homepagenomore">
+							<span>没有更多了</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script src="js/homePage/homePhotos.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/homePage/home_msgndreport.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/homePage/home_inner_news.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/homePage/videolist.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/homePage/homepage.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/**加载列表***/
+			homePhotos.getList();
+			msgAndReport.getMsg();
+
+			innerNews.getList(1);
+			video_list.getList(1);
+			msgAndReport.getNews(1);
+
+			/***加载更多***/
+			var homePage_current_page = 2;
+			homepage.loadmore();
+
+			/****轮播图开始*****/
+			homePhotos.btnleft();
+			homePhotos.btnright();
+			homePhotos.btnposition();
+//			homePhotos.autoPlay();
+			/****轮播图结束*****/
+
+			//
+		</script>
+	</body>
+
+</html>

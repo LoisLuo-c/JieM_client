@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public/reset.css" />
+		<link rel="stylesheet" href="css/header/header.css" />
+		<link rel="stylesheet" href="css/video/video-js.css" />
+		<link rel="stylesheet" href="css/public/comment.css" />
+		<link rel="stylesheet" type="text/css" href="css/video/video.css" />
+		<link rel="stylesheet" type="text/css" href="css/video/videoRecommend.css" />
+
+		<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/video/video.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+	</head>
+
+	<body>
+		<div class="header"></div>
+		<div class="loading">
+			<div class="loadingImg">
+				<img src="img/tool/loading1.gif"/>
+			</div>
+			<div class="mask"></div>
+			
+		</div>
+		<div class="container">
+			<div class="container-inner">
+				<div class="video_view">
+					<div class="video_main">
+						<div class="title">
+							<h1></h1>
+						</div>
+						<div class="video_item">
+
+						</div>
+						
+					</div>
+					<div class="recommend_video">
+							<div class="title">
+								<span>推荐阅读</span>
+							</div>
+							<ul class="recommend_list">
+
+							</ul>
+
+						</div>
+
+				</div>
+			</div>
+			<!--评论区-->
+			<div class="comm">
+				<div class="comment_view">
+					<div class="comment_box">
+						<div class="text_box">
+							<textarea id="comment_text" maxlength="200" name="comment" rows="3" cols="69" placeholder="发表评论">
+								
+							</textarea>
+						</div>
+						<div class="text_info">
+							<span>最少输入5个字</span>
+							<div class="textarea_btn">发布</div>
+						</div>
+						<h5><span>评论</span><span class="comment_num"></span></h5>
+						<dl>
+							<dd>
+								<dd class="comment_show">
+
+								</dd>
+							</dd>
+						</dl>
+
+					</div>
+				</div>
+			</div>
+			<div class="login_box"></div>
+		</div>
+		<script src="js/video/video.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/comment.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/login.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/video/videoRecommend.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			/*****加载文件******/
+			$(".header").load("header2.html");
+			//初始化评论
+			var atricleCurrentPage = 1
+			comment.getComment(atricleCurrentPage);
+			
+//			comment.updateComment();
+//			comment.updateReply();
+			video.getVideo(sessionStorage.getItem("video_id"));
+			
+			videoRecommend.toVideo()
+			//设置textarea自动增高
+			$("textarea").txtaAutoHeight();
+
+			//			/*****控制视频播放******/
+			//			var myPlayer = videojs('my-video');
+			//			videojs("my-video").ready(function() {
+			//				var myPlayer = this;
+			//				myPlayer.play();
+			//			});
+
+			//评论及评论框输入长度控制
+			$(".textarea_btn").on("click", function() {
+
+				if($("#comment_text").val().length < 5) {
+					$(".text_info span").css({
+						"color": "red"
+					});
+				} else {
+					comment.doComment();
+					$(".text_info span").css({
+						"color": "black"
+					});
+				}
+			})
+			//判断是否已登录
+			$("#comment_text").on("click", function() {
+				comment.isLogin();
+			})
+
+			/****回复设置****/
+			//回复框显示设置
+			var i = true;
+			$(document).on("click", ".reply_btn", function() {
+				var el = this;
+				var data = this.dataset.reply_id
+				sessionStorage.setItem("comment_id", this.dataset.reply_id);
+				if(i) {
+					comment.showReportBox(el, data);
+					i = false;
+				} else {
+					comment.closeReportBox(data);
+					i = true;
+				}
+			});
+			$(document).on("click", ".report_btn_box", function() {
+				var rp_t = document.getElementsByClassName("report_textarea");
+				var rp_t_val = $(rp_t).val();
+				var reply_data = $(this).data("reply_data");
+				if(rp_t_val.length < 2) {
+					var a = document.getElementsByClassName("reply_limit");
+					$(a).css({
+						"display": "inherit"
+					});
+				} else {
+					comment.doReply(rp_t_val, reply_data);
+				}
+			});
+
+			/****回复结束****/
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+.recommend_video {
+  width: 270px;
+  float: right;
+  background-color: #000;
+  margin-top: 30px;
+  padding: 10px;
+}
+.recommend_video .title {
+  width: 270px;
+  color: white;
+  line-height: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+.recommend_video .recommend_list {
+  width: 270px;
+}
+.recommend_video .recommend_list .video_re_item {
+  margin: 10px 0 20px;
+  overflow: hidden;
+  border-bottom: 1px solid gainsboro;
+}
+.recommend_video .recommend_list .video_re_item .news_img {
+  float: left;
+  margin-bottom: 10px;
+}
+.recommend_video .recommend_list .video_re_item .news_img img {
+  width: 135px;
+  height: 100px;
+}
+.recommend_video .recommend_list .video_re_item .news_content {
+  float: right;
+  width: 120px;
+  height: 100px;
+  color: white;
+  margin-left: 5px;
+}
+.recommend_video .recommend_list .video_re_item .news_content .news_title {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+.recommend_video .recommend_list .video_re_item .news_content .news_date {
+  font-size: 12px;
+}
+.recommend_video .recommend_list .video_re_item .news_title:hover {
+  color: #06145c;
+}

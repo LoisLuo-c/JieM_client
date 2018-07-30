@@ -1,0 +1,207 @@
+.main_content {
+    .middle_content {
+        width: 1200px;
+        margin: 0 auto;
+        .content_inner {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: #9e1d0a;
+            .content_left {
+                width: 120px;
+                float: left;
+                color: white;
+                font-family: Verdana light, SimHei;
+                h2 {
+                    text-align: center;
+                    font-size: 70px;
+                    word-wrap: break-word;
+                    text-shadow: 0 0 5px #333;
+                    padding: 15px;
+                    margin: 0;
+                    line-height: 70px;
+                }
+                .sort_list {
+                    margin: 0;
+                    border-top: 1px solid rgba(0, 0, 0, .15);
+                    border-bottom: 1px solid rgba(255, 255, 225, .14);
+                    .sort_item {
+                        text-align: center;
+                        font-size: 15px;
+                        padding: 10px;
+                        border-top: 1px solid rgba(255, 255, 225, .14);
+                    }
+                    .sort_item:hover {
+                        background-color: #811803;
+                        transition: 0.2s;
+                    }
+                }
+            }
+            .photos_main {
+                width: 1079px;
+                height: 350px;
+                overflow: hidden;
+                position: relative;
+                .ph_box {
+                    .photos_list {
+                        width: 6000%;
+                        height: 350px;
+                        position: relative;
+                        left: -510px;
+                        .photos_item {
+                            width: 700px;height: 350px;
+                            float: left;
+                            .photos{
+                                a{
+                                    width: 700px;height: 350px;
+                                    img{
+                                         width: 700px;height: 350px;
+                                    }
+                                }
+                            }
+                            .info_box{
+                                position: absolute;
+                                
+                                bottom: 20px;
+                            .photos_info{
+                                display: none;
+                                position: relative;
+                                left: -330px;
+                                width: 330px;
+                                color: white;
+                                margin-left: 15px;
+                                padding:1px ;
+                                background-color: rgba(0, 0, 0, 0.7);
+                                box-shadow:0 0 5px #000;
+                                .titie{
+                                    margin: 15px;
+                                    h3{
+                                        margin: 0;
+                                    }
+                                }
+                                .footer{
+                                    width: 300px;
+                                    margin: 0 15px 15px;
+                                    font-size: 12px;
+                                    .author{
+                                        margin-right: 5px;
+                                    }
+                                    .comment{
+                                        float: right;
+                                         i{
+                                             margin-right: 4px;
+                                         }
+                                    }
+                                    .click{
+                                         float: right;
+                                         i{
+                                             margin-right: 4px;
+                                         }
+                                    }
+                                }
+                            }
+                            }
+                        }
+                        @keyframes mymove
+                        {
+                            from {left:-330px;;}
+                            to {left:0;}
+                        }
+                        .active{
+                            .photos_info{
+                                display: inline-block !important;
+                                animation:mymove 2s infinite;
+                                animation:mymove 1s;
+                                left: 0px !important;
+                            }
+                        }
+                    }
+                    .btn {
+                        width: 190px;
+                        height: 350px;
+                        background-color: rgba(82, 82, 82, 0.7);
+                        position: absolute;
+                        top: 0;
+                        text-align: center;
+                        i {
+                            font-size: 50px;
+                            line-height: 320px;
+                        }
+                    }
+                    .btn_left:hover {
+                        background-color: rgba(42, 42, 42, 0.7);
+                        color: white;
+                    }
+                    .btn_right {
+                        right: 0;
+                    }
+                    .btn_right:hover {
+                        background-color: rgba(42, 42, 42, 0.7);
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//.ph_box {
+//                  width: 700px;
+//                  height: 350px;
+//                  .photos_list {
+//                      width: 1400px;
+//                      height: 350px;
+//                      position: relative;
+//                      margin: 0px;
+//                      padding: 0px;
+//                      left: -510px;
+//                      .photos_item {
+////                          width: 580px;
+////                          height: 350px;
+//                          display: inline-block;
+//                          margin: 0;
+//                          padding: 0;
+//                          float: left;
+////                          
+//                          .photos{
+//                              a{
+//                                  margin: 0;
+//                              }
+//                              img{
+//                                  width: 580px;
+//                                  height: 350px;
+//                              }
+//                          }
+//                          .photos_info{
+//                              color: white;   
+////                              float: left;
+//                              top: -150px;
+//                              width: 330px;
+//                               background-color: rgba(0, 0, 0, 0.7);
+//                          }
+//                          
+//                      }
+//                  }
+//                  .btn {
+//                      width: 190px;
+//                      height: 350px;
+//                      background-color: rgba(82, 82, 82, 0.7);
+//                      position: absolute;
+//                      top: 20px;
+//                      text-align: center;
+//                      i {
+//                          font-size: 50px;
+//                          line-height: 320px;
+//                      }
+//                  }
+//                  .btn_left:hover {
+//                      background-color: rgba(42, 42, 42, 0.7);
+//                      color: white;
+//                  }
+//                  .btn_right {
+//                      right: 0;
+//                  }
+//                  .btn_right:hover {
+//                      background-color: rgba(42, 42, 42, 0.7);
+//                      color: white;
+//                  }
+//              }

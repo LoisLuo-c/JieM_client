@@ -1,0 +1,318 @@
+body {
+    background-color: gainsboro;
+}
+
+.success {
+    display: none;
+    width: 800px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 30px;
+    margin-top: 50px;
+    div{
+        padding-top: 80px;
+    }
+    .fc{
+        margin-left: 280px;
+    }
+    .sc{
+        color: #ff7200;
+    }
+    i {
+        font-size: 30px;
+        color: #38d509;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin-bottom: 50px;
+    .header_text {
+        width: 750px;
+        height: 40px;
+        margin: 0 auto;
+        font-size: 20px;
+        span {
+            line-height: 50px;
+        }
+        .fc {
+            margin-left: 150px;
+        }
+        .tologin {
+            float: right;
+            font-size: 17px;
+            color: #f12b15;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        .sc {
+            float: right;
+            font-size: 17px;
+            color: gray;
+        }
+    }
+}
+
+.reg_box {
+    width: 750px;
+    height: 380px;
+    border: 1px dotted #8c8a89;
+    box-shadow: 2px 1px 1px gray;
+    background-color: white;
+    border-radius: 12px;
+    margin: 0 auto;
+    overflow: hidden;
+    .reg_list {
+        margin: 30px 40px;
+        li {
+            padding-bottom: 25px;
+            overflow: hidden;
+        }
+        input {
+            color: #999999;
+        }
+        .reg_username {
+            position: relative;
+            overflow: hidden;
+            width: 750px;
+            .input {
+                float: left;
+                font-size: 18px;
+                input {
+                    //                  border: 1px solid #ff7200;
+                    border: 1px solid #777;
+                    padding: 2px 8px;
+                    font-size: 16px;
+                    width: 400px;
+                    height: 35px;
+                }
+                input:focus {
+                    outline: none;
+                    border: 2px solid gray;
+                }
+                .icon {
+                    position: absolute;
+                    top: 5px;
+                    left: 380px;
+                    i {
+                        color: gray;
+                        font-size: 30px;
+                    }
+                }
+            }
+            .msg {
+                float: left;
+                width: 200px;
+                height: 25px;
+                margin-left: 20px;
+                padding-top: 8px;
+                color: gray;
+                font-size: 15px;
+                .prompt {
+                    display: none;
+                }
+                .empty {
+                    display: none;
+                    color: #ff7200;
+                }
+                .error {
+                    display: none;
+                    color: #ff7200;
+                }
+                .correct {
+                    display: none;
+                    i {
+                        font-size: 20px;
+                        color: #38d509;
+                    }
+                }
+            }
+        }
+        .reg_password {
+            position: relative;
+            overflow: hidden;
+            width: 750px;
+            .input {
+                float: left;
+                font-size: 18px;
+                input {
+                    //                  border: 1px solid #ff7200;
+                    border: 1px solid #777;
+                    padding: 2px 8px;
+                    font-size: 16px;
+                    width: 400px;
+                    height: 35px;
+                }
+                input:focus {
+                    outline: none;
+                    border: 2px solid gray;
+                }
+                .icon {
+                    position: absolute;
+                    top: 7px;
+                    left: 380px;
+                    i {
+                        color: gray;
+                        font-size: 26px;
+                    }
+                }
+            }
+            .msg {
+                float: left;
+                width: 200px;
+                height: 25px;
+                margin-left: 20px;
+                padding-top: 8px;
+                color: gray;
+                font-size: 15px;
+                .prompt {
+                    display: none;
+                }
+                .empty {
+                    display: none;
+                    color: #ff7200;
+                }
+                .error {
+                    display: none;
+                    color: #ff7200;
+                }
+                .correct {
+                    display: none;
+                    i {
+                        font-size: 20px;
+                        color: #38d509;
+                    }
+                }
+            }
+        }
+        .comfirm_pw {
+            position: relative;
+            overflow: hidden;
+            width: 750px;
+            .input {
+                float: left;
+                font-size: 18px;
+                input {
+                    //                  border: 1px solid #ff7200;
+                    border: 1px solid #777;
+                    padding: 2px 8px;
+                    font-size: 16px;
+                    width: 400px;
+                    height: 35px;
+                }
+                input:focus {
+                    outline: none;
+                    border: 2px solid gray;
+                }
+                .icon {
+                    position: absolute;
+                    top: 7px;
+                    left: 380px;
+                    i {
+                        color: gray;
+                        font-size: 26px;
+                    }
+                }
+            }
+            .msg {
+                float: left;
+                width: 200px;
+                height: 25px;
+                margin-left: 20px;
+                padding-top: 8px;
+                color: gray;
+                font-size: 15px;
+                .prompt {
+                    display: none;
+                }
+                .empty {
+                    display: none;
+                    color: #ff7200;
+                }
+                .error {
+                    display: none;
+                    color: #ff7200;
+                }
+                .correct {
+                    display: none;
+                    i {
+                        font-size: 20px;
+                        color: #38d509;
+                    }
+                }
+            }
+        }
+        .verf_code {
+            position: relative;
+            overflow: hidden;
+            width: 750px;
+            .input {
+                float: left;
+                font-size: 18px;
+                input {
+                    vertical-align: top;
+                    //                  border: 1px solid #ff7200;
+                    border: 1px solid #777;
+                    padding: 2px 8px;
+                    font-size: 16px;
+                    width: 200px;
+                    height: 35px;
+                }
+                input:focus {
+                    outline: none;
+                    border: 2px solid gray;
+                }
+                img {
+                    padding-left: 20px;
+                }
+            }
+            .msg {
+                float: left;
+                width: 300px;
+                height: 25px;
+                margin-left: 20px;
+                padding-top: 8px;
+                color: gray;
+                font-size: 15px;
+                .prompt {
+                    display: none;
+                }
+                .empty {
+                    display: none;
+                    color: #ff7200;
+                }
+                .error {
+                    display: none;
+                    color: #ff7200;
+                }
+                .correct {
+                    display: none;
+                    i {
+                        font-size: 20px;
+                        color: #38d509;
+                    }
+                }
+            }
+        }
+        .submit {
+            .submit_box {
+                width: 420px;
+                height: 40px;
+                text-align: center;
+                background-color: #ff7200;
+                color: white;
+                font-size: 20px;
+                span {
+                    line-height: 40px;
+                }
+            }
+            .submit_box:hover {
+                cursor: pointer;
+                background-color: #ff5500;
+            }
+        }
+    }
+}

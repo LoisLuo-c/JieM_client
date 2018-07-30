@@ -1,0 +1,195 @@
+body {
+  background-color: gainsboro;
+}
+.success {
+  display: none;
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.success div {
+  padding-top: 80px;
+}
+.success .fc {
+  margin-left: 280px;
+}
+.success .sc {
+  color: #ff7200;
+}
+.success i {
+  font-size: 30px;
+  color: #38d509;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.header .header_text {
+  width: 750px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.header .header_text span {
+  line-height: 50px;
+}
+.header .header_text .fc {
+  margin-left: 150px;
+}
+.header .header_text .tologin {
+  float: right;
+  font-size: 17px;
+  color: #f12b15;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.header .header_text .sc {
+  float: right;
+  font-size: 17px;
+  color: gray;
+}
+.log_box {
+  width: 600px;
+  height: 380px;
+  border: 1px dotted #8c8a89;
+  box-shadow: 2px 1px 1px gray;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.log_box .banner {
+  width: 350px;
+  margin: 0 auto;
+}
+.log_box .banner .line {
+  width: 350px;
+  height: 50px;
+  border-bottom: 2px solid gainsboro;
+}
+.log_box .banner .text {
+  background-color: white;
+  color: #565453;
+  position: relative;
+  padding: 0 10px;
+  top: -15px;
+  left: 130px;
+}
+.log_box .log_list {
+  margin: 10px 90px;
+}
+.log_box .log_list input {
+  color: #999999;
+}
+.log_box .log_list .error {
+  width: 200px;
+  height: 20px;
+  margin: 0 140px 20px;
+  color: red;
+}
+.log_box .log_list .error span {
+  display: none;
+}
+.log_box .log_list .log_username {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+}
+.log_box .log_list .log_username .input {
+  float: left;
+  font-size: 18px;
+}
+.log_box .log_list .log_username .input input {
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 35px;
+}
+.log_box .log_list .log_username .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.log_box .log_list .log_username .input .icon {
+  position: absolute;
+  top: 5px;
+  left: 380px;
+}
+.log_box .log_list .log_username .input .icon i {
+  color: gray;
+  font-size: 30px;
+}
+.log_box .log_list .log_username .msg {
+  float: left;
+  width: 200px;
+  height: 25px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.log_box .log_list .log_username .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.log_box .log_list .log_password {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+}
+.log_box .log_list .log_password .input {
+  font-size: 18px;
+}
+.log_box .log_list .log_password .input input {
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 35px;
+}
+.log_box .log_list .log_password .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.log_box .log_list .log_password .input .icon {
+  position: absolute;
+  top: 7px;
+  left: 380px;
+}
+.log_box .log_list .log_password .input .icon i {
+  color: gray;
+  font-size: 26px;
+}
+.log_box .log_list .log_password .msg {
+  width: 200px;
+  height: 25px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.log_box .log_list .log_password .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.log_box .log_list .submit {
+  margin-top: 10px;
+}
+.log_box .log_list .submit .submit_box {
+  width: 420px;
+  height: 40px;
+  text-align: center;
+  background-color: #ff7200;
+  color: white;
+  font-size: 20px;
+}
+.log_box .log_list .submit .submit_box span {
+  line-height: 40px;
+}
+.log_box .log_list .submit .submit_box:hover {
+  cursor: pointer;
+  background-color: #ff5500;
+}

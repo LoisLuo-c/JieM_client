@@ -1,0 +1,96 @@
+.content_box {
+  float: left;
+}
+.content_box .msg_box {
+  border-left: 10px solid #f0ebea;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.35);
+  background-color: white;
+  width: 630px;
+  overflow: hidden;
+  display: none;
+}
+.content_box .msg_box .msg_list li {
+  width: 580px;
+  height: 100px;
+  margin: 0 15px 0 20px;
+  border-bottom: 1px solid gainsboro;
+  overflow: hidden;
+}
+.content_box .msg_box .msg_list li .msgCon {
+  float: left;
+  width: 540px;
+  height: 100px;
+  margin-left: 15px;
+}
+.content_box .msg_box .msg_list li .msgCon .header {
+  float: left;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #434242;
+}
+.content_box .msg_box .msg_list li .msgCon .header span {
+  margin-right: 5px;
+}
+.content_box .msg_box .msg_list li .msgCon .content {
+  float: left;
+  margin: 10px 0;
+  font-size: 15px;
+  color: gray;
+}
+.content_box .msg_box .msg_list li .msgCon .content .user {
+  float: left;
+}
+.content_box .msg_box .msg_list li .msgCon .content .reply_con {
+  float: left;
+  width: 420px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.content_box .msg_box .msg_list li .msgCon .footer {
+  float: left;
+  font-size: 13px;
+  color: gray;
+}
+.content_box .msg_box .msg_list li .msgCon .footer .time {
+  float: left;
+  margin-right: 15px;
+}
+.content_box .msg_box .msg_list li .msgCon .footer .resource {
+  float: left;
+  width: 357px;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.content_box .msg_box .msg_list li .msgCon .footer .resource:hover {
+  cursor: pointer;
+}
+.content_box .msg_box .msg_list .item_parise .parise_msg .header {
+  margin: 20px 0;
+}
+.content_box .msg_box .loadmore {
+  float: left;
+  width: 580px;
+  margin: 20px 0 50px;
+  text-align: center;
+}
+.content_box .msg_box .loadmore span {
+  background-color: #f8f8f8;
+  border: 1px solid #a6a6a6;
+  border-radius: 10px;
+  padding: 5px 20px;
+  width: 100px;
+  text-align: center;
+}
+.content_box .msg_box .nomore {
+  display: none;
+  margin: 20px 0 50px;
+}
+.content_box .msg_box .nomore span {
+  margin-left: 254px;
+}

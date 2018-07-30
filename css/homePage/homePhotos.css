@@ -1,0 +1,96 @@
+.index_left {
+  width: 470px;
+}
+.index_left .top_silder {
+  position: relative;
+}
+.index_left .top_silder .photo_box {
+  width: 470px;
+  overflow: hidden;
+  background-color: black;
+}
+.index_left .top_silder .photo_box .ph_list {
+  width: 6000%;
+  position: relative;
+}
+.index_left .top_silder .photo_box .ph_list .news_item {
+  width: 470px;
+  float: left;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_img {
+  width: 470px ;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_img img {
+  width: 470px;
+  height: 313px;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_title {
+  width: 470px;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  color: #e5e5e5;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_title h2 {
+  margin: 10px 30px;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_title h2 a {
+  display: inline-block;
+  width: 410px;
+  height: 80px;
+  text-overflow: ellipsis;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer {
+  color: #A6A6A6;
+  font-size: 12px;
+  width: 400px;
+  margin: 0 30px;
+  padding-bottom: 15px;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer .author {
+  margin-right: 10px;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer .click {
+  float: right;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer .click i {
+  margin-right: 4px;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer .comment {
+  margin-right: 6px;
+  float: right;
+}
+.index_left .top_silder .photo_box .ph_list .news_item .silder_footer .comment i {
+  margin-right: 4px;
+}
+.index_left .top_silder .photo_box .btn {
+  position: absolute;
+}
+.index_left .top_silder .photo_box .btn i {
+  font-size: 60px;
+}
+.index_left .top_silder .photo_box .btn:hover {
+  color: gainsboro;
+  cursor: pointer;
+}
+.index_left .top_silder .photo_box .btn_left {
+  top: 120px;
+  left: 20px;
+}
+.index_left .top_silder .photo_box .btn_right {
+  top: 120px;
+  right: 20px;
+}
+.index_left .top_silder .photo_box .position_box {
+  float: left;
+  width: 470px;
+  margin-bottom: 2px;
+}
+.index_left .top_silder .photo_box .position_box .position_list .position_item {
+  float: left;
+  margin-left: 1px;
+  width: 77px;
+  height: 5px;
+  background-color: gray;
+  border-radius: 1px;
+}

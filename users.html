@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/public/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/users/users.css" />
+		<link rel="stylesheet" type="text/css" href="css/users/content_box.css"/>
+		<link rel="stylesheet" type="text/css" href="css/users/browse_box.css"/>
+	
+
+	<script src="js/public/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/font_580773_nsqnz3ke39uanhfr/iconfont.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" type="text/css" href="js/font_580773_nsqnz3ke39uanhfr/iconfont.css" />
+</head>
+	<body>
+		<div class="userheader">
+			<div class="header_text">
+				<span class="fc">界面新闻用户设置</span>
+			</div>
+		</div>
+		<div class="userBox">
+			<div class="container">
+				<div class="container_view">
+					<div class="user_header">
+						<div class="user_image">
+							
+							<form id="img_form" enctype="multipart/form-data" method="post" action="http://loisluo.com/admin/upload">
+								<img class="userImg" src="" />
+								<input type="file" multiple="multiple" name="file" id="img_upload" value="" />
+							</form>
+
+						</div>
+						<div class="user_info">
+							<div class="username">会上树的Hasky</div>
+							<div class="signature"><input type="" name="" id="" value="请编辑你的个性签名" /></div>
+						</div>
+					</div>
+					<div class="user_content">
+						<div class="user_nav">
+							
+							<ul class="list">
+								<a href="#/user_msg">
+									<li class="msg_noti item">
+										<i class="iconfont icon-iconfontpinglun"></i> 消息通知
+									</li>
+								</a>
+								<a href="#/user_history">
+									<li class="browse_history item"><i class="iconfont icon-liulan3"></i>浏览历史</li>
+								</a>
+							</ul>
+
+						</div>
+
+						<div class="content_box">
+							<div class="msg_box">
+								<ul class="msg_list">
+									
+								</ul>
+								<div class="loadmore">
+									<span>加载更多</span>
+								</div>
+								<div class="nomore">
+									<span>没有更多了</span>
+								</div>
+							</div>
+							
+							<div class="browse_box">
+								<div class="remove">
+									<span class="select_all" >
+										全选
+									</span>
+									<span class="remove_btn">删除</span>
+								</div>
+								
+								<ul class="browse_list">
+									
+								</ul>
+								<div class="loadmore">
+									<span>加载更多</span>
+								</div>
+								<div class="nomore">
+									<span>没有更多了</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/public/jq.form.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/users/users.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/public/router.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/users/users_img.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/users/msg_noti.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/users/user_browse.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			//获取用户信息
+			userImg.getList();
+			
+			//显示图片上传
+			userImg.showUpload();
+			userBrowse.selectItem();
+			
+			
+			users.loadmore();
+			
+						
+			Router.route('/user_msg',function(){
+//				$(".msg_noti").css({'background-color': '#ea3f1d'})
+//				$(".browse_history").css({'background-color': 'white'})
+				$(".msg_noti").addClass("active");
+				$(".browse_history").removeClass("active");
+				msgNoti.getList(1);
+				$(".msg_box").show().siblings().hide()
+				
+			})
+			Router.route('/user_history',function(){
+				$(".browse_history").addClass("active");
+				$(".msg_noti").removeClass("active");
+				$(".browse_box").show().siblings().hide()
+				userBrowse.getList(1);
+			})
+		</script>
+	</body>
+
+</html>

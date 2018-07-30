@@ -1,0 +1,98 @@
+.index_left {
+  float: left;
+}
+.index_left .news_msg {
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 1px gainsboro;
+}
+.index_left .news_msg .news_msg_title {
+  width: 470px;
+  height: 35px;
+  padding: 12px 0 10px;
+}
+.index_left .news_msg .news_msg_title span {
+  background-color: #f39801;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding: 3px 11px;
+}
+.index_left .news_msg .isemg_item {
+  overflow: hidden;
+}
+.index_left .news_msg .isemg_item li {
+  color: #383635;
+  height: 30px;
+}
+.index_left .news_msg .isemg_item li .msg_date {
+  float: left;
+  font-size: 14px;
+  margin: 0 12px;
+  padding-top: 3px;
+}
+.index_left .news_msg .isemg_item li .msg_title {
+  font-size: 18px;
+  width: 410px;
+}
+.index_left .news_msg .isemg_item li .msg_title a div {
+  float: left;
+  margin: 0;
+  display: inline-block;
+  width: 400px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.index_left .news_reports {
+  float: left;
+}
+.index_left .news_reports .news_item {
+  color: #282a2b;
+  box-shadow: 1px 1px 1px darkgrey;
+  margin-bottom: 20px;
+}
+.index_left .news_reports .news_item .news_img {
+  width: 470px;
+  height: 235px;
+}
+.index_left .news_reports .news_item .news_img img {
+  width: 470px;
+  height: 235px;
+}
+.index_left .news_reports .news_item .news_title h2 {
+  margin: 10px;
+  font-size: 22px;
+}
+.index_left .news_reports .news_item .news_title h2 a:hover {
+  color: #0d283e;
+}
+.index_left .news_reports .news_item .news_subtitle {
+  margin: 5px 10px;
+  overflow: hidden;
+}
+.index_left .news_reports .news_item .news_subtitle p {
+  width: 450px;
+  height: 55px;
+  font-size: 15px;
+  line-height: 25px;
+  color: #818181;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.index_left .news_reports .news_item .news_footer {
+  padding-bottom: 10px;
+  font-size: 12px;
+  color: #777 ;
+}
+.index_left .news_reports .news_item .news_footer .news_author {
+  margin: 0 10px 10px;
+}
+.index_left .news_reports .news_item .news_footer .comment {
+  float: right;
+  margin-right: 20px;
+}
+.index_left .news_reports .news_item .news_footer .comment i {
+  margin-right: 4px;
+}

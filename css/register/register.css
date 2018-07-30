@@ -1,0 +1,309 @@
+body {
+  background-color: gainsboro;
+}
+.success {
+  display: none;
+  width: 800px;
+  height: 200px;
+  margin: 0 auto;
+  background-color: white;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.success div {
+  padding-top: 80px;
+}
+.success .fc {
+  margin-left: 280px;
+}
+.success .sc {
+  color: #ff7200;
+}
+.success i {
+  font-size: 30px;
+  color: #38d509;
+}
+.header {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  margin-bottom: 50px;
+}
+.header .header_text {
+  width: 750px;
+  height: 40px;
+  margin: 0 auto;
+  font-size: 20px;
+}
+.header .header_text span {
+  line-height: 50px;
+}
+.header .header_text .fc {
+  margin-left: 150px;
+}
+.header .header_text .tologin {
+  float: right;
+  font-size: 17px;
+  color: #f12b15;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.header .header_text .sc {
+  float: right;
+  font-size: 17px;
+  color: gray;
+}
+.reg_box {
+  width: 750px;
+  height: 380px;
+  border: 1px dotted #8c8a89;
+  box-shadow: 2px 1px 1px gray;
+  background-color: white;
+  border-radius: 12px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.reg_box .reg_list {
+  margin: 30px 40px;
+}
+.reg_box .reg_list li {
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+.reg_box .reg_list input {
+  color: #999999;
+}
+.reg_box .reg_list .reg_username {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+}
+.reg_box .reg_list .reg_username .input {
+  float: left;
+  font-size: 18px;
+}
+.reg_box .reg_list .reg_username .input input {
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 35px;
+}
+.reg_box .reg_list .reg_username .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.reg_box .reg_list .reg_username .input .icon {
+  position: absolute;
+  top: 5px;
+  left: 380px;
+}
+.reg_box .reg_list .reg_username .input .icon i {
+  color: gray;
+  font-size: 30px;
+}
+.reg_box .reg_list .reg_username .msg {
+  float: left;
+  width: 200px;
+  height: 25px;
+  margin-left: 20px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.reg_box .reg_list .reg_username .msg .prompt {
+  display: none;
+}
+.reg_box .reg_list .reg_username .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .reg_username .msg .error {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .reg_username .msg .correct {
+  display: none;
+}
+.reg_box .reg_list .reg_username .msg .correct i {
+  font-size: 20px;
+  color: #38d509;
+}
+.reg_box .reg_list .reg_password {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+}
+.reg_box .reg_list .reg_password .input {
+  float: left;
+  font-size: 18px;
+}
+.reg_box .reg_list .reg_password .input input {
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 35px;
+}
+.reg_box .reg_list .reg_password .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.reg_box .reg_list .reg_password .input .icon {
+  position: absolute;
+  top: 7px;
+  left: 380px;
+}
+.reg_box .reg_list .reg_password .input .icon i {
+  color: gray;
+  font-size: 26px;
+}
+.reg_box .reg_list .reg_password .msg {
+  float: left;
+  width: 200px;
+  height: 25px;
+  margin-left: 20px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.reg_box .reg_list .reg_password .msg .prompt {
+  display: none;
+}
+.reg_box .reg_list .reg_password .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .reg_password .msg .error {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .reg_password .msg .correct {
+  display: none;
+}
+.reg_box .reg_list .reg_password .msg .correct i {
+  font-size: 20px;
+  color: #38d509;
+}
+.reg_box .reg_list .comfirm_pw {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+}
+.reg_box .reg_list .comfirm_pw .input {
+  float: left;
+  font-size: 18px;
+}
+.reg_box .reg_list .comfirm_pw .input input {
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 400px;
+  height: 35px;
+}
+.reg_box .reg_list .comfirm_pw .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.reg_box .reg_list .comfirm_pw .input .icon {
+  position: absolute;
+  top: 7px;
+  left: 380px;
+}
+.reg_box .reg_list .comfirm_pw .input .icon i {
+  color: gray;
+  font-size: 26px;
+}
+.reg_box .reg_list .comfirm_pw .msg {
+  float: left;
+  width: 200px;
+  height: 25px;
+  margin-left: 20px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.reg_box .reg_list .comfirm_pw .msg .prompt {
+  display: none;
+}
+.reg_box .reg_list .comfirm_pw .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .comfirm_pw .msg .error {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .comfirm_pw .msg .correct {
+  display: none;
+}
+.reg_box .reg_list .comfirm_pw .msg .correct i {
+  font-size: 20px;
+  color: #38d509;
+}
+.reg_box .reg_list .verf_code {
+  position: relative;
+  overflow: hidden;
+  width: 750px;
+}
+.reg_box .reg_list .verf_code .input {
+  float: left;
+  font-size: 18px;
+}
+.reg_box .reg_list .verf_code .input input {
+  vertical-align: top;
+  border: 1px solid #777;
+  padding: 2px 8px;
+  font-size: 16px;
+  width: 200px;
+  height: 35px;
+}
+.reg_box .reg_list .verf_code .input input:focus {
+  outline: none;
+  border: 2px solid gray;
+}
+.reg_box .reg_list .verf_code .input img {
+  padding-left: 20px;
+}
+.reg_box .reg_list .verf_code .msg {
+  float: left;
+  width: 300px;
+  height: 25px;
+  margin-left: 20px;
+  padding-top: 8px;
+  color: gray;
+  font-size: 15px;
+}
+.reg_box .reg_list .verf_code .msg .prompt {
+  display: none;
+}
+.reg_box .reg_list .verf_code .msg .empty {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .verf_code .msg .error {
+  display: none;
+  color: #ff7200;
+}
+.reg_box .reg_list .verf_code .msg .correct {
+  display: none;
+}
+.reg_box .reg_list .verf_code .msg .correct i {
+  font-size: 20px;
+  color: #38d509;
+}
+.reg_box .reg_list .submit .submit_box {
+  width: 420px;
+  height: 40px;
+  text-align: center;
+  background-color: #ff7200;
+  color: white;
+  font-size: 20px;
+}
+.reg_box .reg_list .submit .submit_box span {
+  line-height: 40px;
+}
+.reg_box .reg_list .submit .submit_box:hover {
+  cursor: pointer;
+  background-color: #ff5500;
+}

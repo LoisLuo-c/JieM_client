@@ -1,0 +1,92 @@
+ .mask{
+        position: absolute;
+        top: 0px;
+        width: 100%;height: 100%;
+        background-color: gainsboro;
+        opacity:0.5;
+    }
+    .login_b{
+        box-shadow: 1px 1px 1px 1px rgba(145,145,150,0.3);
+        position: fixed;
+        top: 10%;left: 35%;
+        width: 400px;height: 350px;
+        background-color: white;
+        opacity:1.2;
+        .login_header{
+                height: 35px;
+                font-size: 14x;
+                color: #414141;
+                background-color: gainsboro;
+                span{
+                    line-height: 34px;
+                    margin: 10px;
+                }
+                .cancel{
+                    margin: 4px 6px;
+                    float: right;
+                    i{
+                        font-size: 25px;
+                    }
+                    i:hover{
+                        color: #d22c0b;
+                    }
+                }
+            }
+        .login_container{
+            
+            padding: 30px 25px 10px;
+            font-size: 16px;
+            .username{
+                padding: 15px 0;
+                input{
+                    width: 270px;
+                    height: 25px;
+                }
+            }
+            .password{
+                padding: 17px 0;
+                span{
+                    margin-left: 15px;
+                }
+                input{
+                    width: 270px; height: 25px;
+                }
+            }
+            .loginBoxErr{
+                color: red;
+                font-size: 15px;
+                visibility: hidden;
+            }
+            .btn{
+                margin: 15px 0 25px;
+                border: 1px solid blue;
+                border-radius: 5px;
+                width: 350px;height: 30px;
+                text-align: center;
+                .login_btn{
+                    width: 350px;height: 30px;
+                }
+                span{
+                   line-height: 30px;
+                }
+            }
+            .btn:hover{
+                border: 1px solid red;
+            }
+            .no_username{
+                text-align: center;
+                span{
+                    color: gray;
+                }
+                .to_register{
+                    color: red;
+                }
+                .to_register:hover{
+                    cursor: pointer;
+                    color: blue;
+                }
+            }
+            
+            
+        }
+    }

@@ -1,0 +1,105 @@
+body {
+  background-color: #f0ebea;
+}
+.userheader {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.userheader .header_text {
+  width: 100%;
+  height: 60px;
+  font-size: 24px;
+  text-align: center;
+  padding: 15px 0;
+}
+.userBox {
+  background-color: #f0ebea;
+}
+.userBox .container {
+  width: 840px;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+.userBox .container .container_view {
+  overflow: hidden;
+  background-color: #f0ebea;
+}
+.userBox .container .container_view .user_header {
+  background-color: white;
+  border-bottom: 1px solid #f3efee;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: 840px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+.userBox .container .container_view .user_header .user_image {
+  float: left;
+  width: 150px;
+  height: 150px;
+  margin: 20px 0 0 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.userBox .container .container_view .user_header .user_image img {
+  width: 150px;
+  height: 150px;
+}
+.userBox .container .container_view .user_header .user_info {
+  float: left;
+}
+.userBox .container .container_view .user_header .user_info .username {
+  margin: 30px 0 0 25px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.userBox .container .container_view .user_header .user_info .signature {
+  margin: 30px 0 0 25px;
+}
+.userBox .container .container_view .user_header .user_info .signature input {
+  width: 500px;
+  height: 35px;
+}
+.userBox .container .container_view .user_content {
+  background-color: white;
+  width: 840px;
+  height: auto;
+  overflow: hidden;
+}
+.userBox .container .container_view .user_content .user_nav {
+  float: left;
+  width: 200px;
+  height: 600px;
+}
+.userBox .container .container_view .user_content .user_nav .list .item {
+  width: 200px;
+  height: 50px;
+  line-height: 48px;
+  border-bottom: 1px solid #dddada;
+}
+.userBox .container .container_view .user_content .user_nav .list .item .i_sign {
+  display: inline-block;
+}
+.userBox .container .container_view .user_content .user_nav .list .item i {
+  float: left;
+  margin: 0 20px;
+  font-size: 26px;
+}
+.userBox .container .container_view .user_content .user_nav .list .msg_noti:hover {
+  background-color: #ea3f1d;
+  color: white;
+}
+.userBox .container .container_view .user_content .user_nav .list .msg_noti.active {
+  background-color: #ea3f1d;
+  color: white;
+}
+.userBox .container .container_view .user_content .user_nav .list .browse_history:hover {
+  background-color: #ea3f1d;
+  color: white;
+}
+.userBox .container .container_view .user_content .user_nav .list .browse_history.active {
+  background-color: #ea3f1d;
+  color: white;
+}
